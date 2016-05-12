@@ -15,7 +15,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginAccount"></activity>
+        <activity android:name=".LoginAccount" />
+        <activity android:name=".Add_Products" />
+        <activity
+            android:name=".LoadProducts"
+            android:label="@string/title_activity_load_products"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

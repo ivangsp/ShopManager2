@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">SHOPMANAGER</string>
+    <string name="title_activity_load_products">LoadProducts</string>
 </resources>

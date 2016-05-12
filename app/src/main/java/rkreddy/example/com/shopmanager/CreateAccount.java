@@ -46,4 +46,10 @@ public class CreateAccount extends AppCompatActivity {
         Intent intent=new Intent(this,LoginAccount.class);
         startActivity(intent);
     }
+
+    public void gobackToLogin(View view){
+
+        Intent intent2=new Intent(this,LoginAccount.class);
+        startActivity(intent2);
+    }
 }

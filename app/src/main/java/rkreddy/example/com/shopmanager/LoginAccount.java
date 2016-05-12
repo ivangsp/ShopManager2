@@ -1,6 +1,7 @@
 package rkreddy.example.com.shopmanager;
 
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -32,6 +33,9 @@ public class LoginAccount extends AppCompatActivity {
         String passwordstring=passwordTextField.getText().toString();
         if(userName.equals(userNameString) && password.equals(passwordstring)){
 
+            Intent intent=new Intent(this,LoadProducts.class);
+            startActivity(intent);
+            Toast.makeText(this,"Data saved successfully",Toast.LENGTH_LONG).show();
             Toast.makeText(this,"LoginSuccessfully",Toast.LENGTH_LONG).show();
         }
         else{
