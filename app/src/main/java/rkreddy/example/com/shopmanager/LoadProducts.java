@@ -63,7 +63,7 @@ public class LoadProducts extends AppCompatActivity {
             }
         });
 
-        SharedPreferences sharedPreferences=getSharedPreferences("products", Context.MODE_APPEND);
+        SharedPreferences sharedPreferences=getSharedPreferences("Items", Context.MODE_APPEND);
         int prodSize=sharedPreferences.getInt("NoOfProducts",0);
 
         items.clear();
@@ -73,21 +73,21 @@ public class LoadProducts extends AppCompatActivity {
         }
         adapter.notifyDataSetChanged();
 
-        //displaying prices for commodities
+//displaying prices for commodities
 
-        SharedPreferences sharedPreferences1=getSharedPreferences("products", Context.MODE_APPEND);
-        int prodSize1=sharedPreferences1.getInt("total",0);
+        SharedPreferences sharedPreferences1=getSharedPreferences("Items", Context.MODE_APPEND);
+        int prodSize1=sharedPreferences1.getInt("priceId",0);
 
         items1.clear();
-        for(int i=0;i<prodSize;i++){
-            items1.add(sharedPreferences.getString("prodprice"+i,null));
+        for(int i=0;i<prodSize1;i++){
+            items1.add(sharedPreferences.getString("price"+i,null));
 
         }
         adapter1.notifyDataSetChanged();
 
         //displaying weights of products
 
-        SharedPreferences sharedPreferences2=getSharedPreferences("products", Context.MODE_APPEND);
+        SharedPreferences sharedPreferences2=getSharedPreferences("Items", Context.MODE_APPEND);
         int prodSize2=sharedPreferences1.getInt("size",0);
 
         items2.clear();

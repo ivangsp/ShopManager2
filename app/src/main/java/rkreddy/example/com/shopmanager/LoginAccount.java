@@ -35,7 +35,7 @@ public class LoginAccount extends AppCompatActivity {
 
             Intent intent=new Intent(this,LoadProducts.class);
             startActivity(intent);
-            Toast.makeText(this,"Data saved successfully",Toast.LENGTH_LONG).show();
+            //Toast.makeText(this,"Data saved successfully",Toast.LENGTH_LONG).show();
             Toast.makeText(this,"LoginSuccessfully",Toast.LENGTH_LONG).show();
         }
         else{
